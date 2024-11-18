@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Json parse</h1>
+    <script>
+        let user=[{id:1,usn:'Mano',Pw:'M123'},{id:2,usn:'Abc',Pw:'a123'}]
+        localStorage.setItem('UserInfo',JSON.stringify(user))
+        let getUsers=JSON.parse(localStorage.getItem('User'))
+        console.log(getUsers,typeof getUsers)
+    </script>
+    <img src="" alt="">
+</body>
+</html>
